@@ -1,0 +1,16 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Lista de Tarefas</title> 
+</head> 
+<body> 
+<h1>Lista de Tarefas</h1> 
+<ul> 
+<% tarefas.forEach(tarefa => { %> <li><%= tarefa.titulo %></li> <% }); %> </ul>   
+<!-- //abre bloco js no meio do html// -->
+<form action="/tarefa" method="POST"> 
+<input type="text" name="title" placeholder="Nova Tarefa"> 
+<button type="submit">Adicionar</button> 
+</form> 
+</body> 
+</html>
